@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	<style type="text/css">
+		body{
+			background-color: #BCD2EE;
+		}
+		#contenido{
+			width: 600px;
+			height: 300px;
+			background-color: #6495ED;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 200px;
+			border-radius: 10px;
+			
+			
+		}
+		.caja_de_texto{
+			font-size: 15px;
+			font-weight: bold;
+			color: blue;
+			border-radius: 5px;
+		}
+
+		.etiqueta_texto{
+			font-size: 15px;
+			font-weight: bold;
+			color: blue;	
+			text-align: right;
+		}
+
+		.boton{
+			font-size: 15px;
+			font-weight: bold;
+			color: white;
+			background-color: blue;
+			border-radius: 5px;	
+		}
+
+		#contenido_tabla{
+			padding-top: 100px;
+		}
+	</style>
+</head>
+<body>
+<div id="contenido">
+	<div id="contenido_tabla">
+	<form action = "../../controlador/controlador.php?vista=login" id="login" method="post">
+	<table align="center">
+		<tr>
+			<td><p class="etiqueta_texto">Usuario:</p></td>
+			<td><input class="caja_de_texto" type="text" name="usuario"></td>
+		</tr>
+		<tr>
+			<td><p class="etiqueta_texto">Clave:</p></td>
+			<td><input class="caja_de_texto" type="password" name="clave"></td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2"><input class="boton" type="submit" value="Ingresar"> </td>
+		</tr>
+	</table>
+	</form>
+	</div>
+</div>
+</body>
+</html>
